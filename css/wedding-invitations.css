@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dull-white: #f7f8f6;
+    --dull-sea-green: #336f7f;
+    --custom-black: #263138;
+}
+
+@font-face {
+    font-family: 'FiloSofia';
+    src: url('../font/Filosofia\ SmallCaps\ Regular.otf');
+}
+.container {
+    max-width: 1300px;
+    width: 97.8%;
+    margin: auto;
+    padding: 0
+}
+a{
+    text-decoration: none; 
+}
+.icon{
+    color: var(--custom-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ribbon {
+    background-color: var(--dull-white);
+}
+
+.ribbon p {
+    text-transform: uppercase;
+    color: var(--custom-black);
+}
+
+
+
+.logo_cover {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 0;
+    max-width: 150px;
+}
+.logo_cover img {
+    width: 100%;
+}
+.menu_cover{
+    flex-grow: 1;
+}
+.menu_cover .menu{
+    width: 96%;
+}
+.menu_cover .menu{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.menu_cover .menu li.menu_link{
+    padding: 0.7em 0.7em 0.5em 0.9em!important;
+    line-height: 1;
+    font-size: .8rem;
+    font-weight: 400;
+}
+.menu_cover .menu li.menu_link a{
+    text-transform: uppercase;
+    color: var(--custom-black);
+}
+.search_box_cover{
+    border: 1px solid #c6c6c6;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.search_box_cover button[type="submit"] {
+    padding: 0 0 0 0.5em;
+    border: none;
+    padding-left: 1em;
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.search_box_cover input{
+    background-color: transparent;
+    border: none;
+    padding: 4px 0 4px 8px;
+    font-size: 13px;
+}
+.search_box_cover input:focus{
+    outline: none !important;
+}
+header .icon_box{
+    border-radius: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 25px; height: 25px;
+    border: none;
+}
+select#currency{
+    border: none;
+}
+
+select#currency::after{
+    content: "";
+    display: none;
+    color: white;
+}
+header.header_area{
+    border-bottom: 1px solid #f7f8f6;
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px){
+    .logo_cover {
+        width: 100%;
+        max-width: 175px;
+    }
+    .banner img{
+        width: 100%;
+    }
+}
