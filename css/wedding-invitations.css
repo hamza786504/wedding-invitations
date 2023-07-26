@@ -1,18 +1,35 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'FiloSofia';
+    font-family: 'Recoleta';
 }
 
 :root {
     --dull-white: #f7f8f6;
     --dull-sea-green: #336f7f;
     --custom-black: #263138;
+    --dark-sea-green: #285763;
 }
 
 @font-face {
-    font-family: 'FiloSofia';
-    src: url('../font/Filosofia\ SmallCaps\ Regular.otf');
+    font-family: 'Recoleta';
+    src: url('../font/Recoleta-RegularDEMO.otf');
+}
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../font/NeueMontreal-Regular.otf');
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('../font/AvenirLTStd-Black.otf');
+}
+@font-face {
+    font-family: 'Avenir-normal';
+    src: url('../font/AvenirLTStd-Book.otf');
+}
+@font-face {
+    font-family: 'bodoni';
+    src: url('../font/BOD_R.TTF');
 }
 .container {
     max-width: 1300px;
@@ -29,11 +46,40 @@ a{
 .icon{
     color: var(--custom-black);
 }
-.text-sea-green{
-    color: var(--dull-sea-green) !important;
+.use_code{
+    padding: 3px 8px;
+    color: white;
+    background-color: var(--dark-sea-green);
 }
-
-
+.skip_links a{
+    cursor: pointer;
+    font-family: 'NeueMontreal';
+}
+.banner h2.dull_sea_green{
+    font-family: 'Recoleta';
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dull-sea-green);
+}
+.banner p.dull_sea_green{
+    font-family: 'Recoleta';
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--dull-sea-green);
+}
+#filter_sm {
+	padding: 5px 15px;
+	background-color: white;
+	color: black;
+	border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+	outline: none;
+}
+.main{
+    background-color: #eef2f3;
+}
 
 
 
@@ -48,12 +94,13 @@ a{
 
 
 .ribbon {
-    background-color: var(--dull-white);
+    background-color: var(--dull-sea-green);
 }
 
 .ribbon p {
-    text-transform: uppercase;
-    color: var(--custom-black);
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 
@@ -164,7 +211,6 @@ header.header_area{
     padding-left: 0;
 }
 .filter_menu_cover ul.d-flex.align-items-center.justify-content-center  li{
-    border-right: 1px solid #c6c6c6;
     position: relative;
 }
 
@@ -208,7 +254,7 @@ li.active{
 ul li:nth-child(2) .dropdown{
     width: 500px;
 }
-.cart_image_cover{
+.card_detail_section{
     padding: 0 10%;
 }
 .cart_image_cover img{
@@ -219,14 +265,31 @@ ul li:nth-child(2) .dropdown{
     color: #263138;
     text-transform: capitalize;
 }
-.card_tools{
-    border-top: 1px solid #eee;
+.card_card_cover{
+    background-color: white;
+    border: 1px solid #DEE4E5;
+    padding: 0px 0 5px 0;
 }
-.card_tools .icon_both img{
-    width: 20px; height: 20px;
+.card_btn{
+    border-top: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.card_btn .icon_both img{
+    width: 30px; height: 30px;
     border-radius: 50%;
 }
-.card_tools p{
+.card_btn .icon_box{
+    background-color: #eef2f3;
+    padding: 0px 5px;
+}
+.btn_text{
+    background-color: var(--dull-sea-green);
+    color: white;
+    font-family: 'Recoleta';
+    padding: 4px 30px;
+}
+.card_btn p{
     font-size: 12px;
 }
 .toolbar p , .toolbar select{
@@ -255,6 +318,76 @@ ul li:nth-child(2) .dropdown{
 
 
 
+.wedding_invitaions{
+    background-color: white;
+}
+.wedding_invitaions .section_header{
+    background-color: var(--dull-sea-green);
+}
+.wedding_invitaions .section_header h2{
+    font-family: 'Recoleta';
+    padding: 10px 0;
+}
+.wedding_invitaions .section_sub_header{
+    background-color: #F7F8F6;
+}
+.wedding_invitaions .section_sub_header p{
+    font-weight: 500;
+    font-size: 15px;
+}
+.wedding_invitaions .review_title{
+    font-family: 'Avenir';
+    font-weight: 900;
+}
+.stars .icon{
+    color: orange;
+}
+.wedding_invitaions .review{
+    background-color: #eef2f3;
+    border-radius: 15px;
+}
+.wedding_invitaions .unique_doc{
+    border-bottom: 1px solid #c6c6c6;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #e5ebed !important;
+}
+.accordion-item:first-of-type .accordion-button {
+    box-shadow: none !important;
+}
+.related_searches h4{
+    font-family: 'bodoni';
+}
+.related_links{
+    margin: 15px auto;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.related_links li{
+    margin-right: 15px;
+}
+.related_links li a{
+    color: #336f7f;
+    font-family: 'Avenir-normal';
+}
+.footer{
+    background-color: #f5f3f1;
+}
+.footer_heading{
+    font-family: 'bodoni';
+    font-size: 2rem;
+}
+.footer li a{
+    font-family: 'Avenir-normal';
+    font-size: 1rem;
+    color: #263138;
+}
+.footer li{
+    line-height: 27px;
+}
 
 
 
@@ -272,6 +405,41 @@ ul li:nth-child(2) .dropdown{
 
 
 
+
+
+
+@media screen and (max-width: 415px){
+    .btn_text p:first-child{
+        font-size: 11px !important;
+    }
+    .btn_text p:last-child{
+        font-size: 8px !important;
+    }
+    .btn_text{
+        padding: 3px 6px;
+    }
+    .card_btn .icon_both {
+        transform: scale(0.6);
+        width: 25px !important;
+        margin: 0 7px 0 0;
+    }
+}
+@media screen and (min-width: 990px){
+    .btn_text p:first-child{
+        font-size: 13px !important;
+    }
+    .btn_text p:last-child{
+        font-size: 10px !important;
+    }
+    .btn_text{
+        padding: 3px 15px;
+    }
+    .card_btn .icon_both {
+        transform: scale(0.6);
+        width: 25px !important;
+        margin: 0 7px 0 0;
+    }
+}
 
 @media screen and (min-width: 768px){
     .logo_cover {
@@ -288,6 +456,24 @@ ul li:nth-child(2) .dropdown{
     .header_area .container{
         max-width: calc(1300px - 1%) !important;
     }
+    .use_code{
+        background-color: transparent;
+    }
+    .main{
+        background-color: white;
+    }
+    .card_card_cover{
+        border: none;
+    }
+    .wedding_invitaions .review{
+        background-color: transparent;
+    }
+    .wedding_invitaions .reviews_section{
+        border-bottom: 1px solid #c6c6c6;
+    } 
+    .wedding_invitaions{
+        border: 1px solid #c6c6c6;
+    }   
 }
 @media screen and (min-width: 990px){
     .header_left{

@@ -16,13 +16,23 @@
 
 <body class="body">
 
+    <!-- skip_links -->
+    <div class="skip_links d-none d-md-flex py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex align-items-center justify-content-center">
+                    <a class="d-flex text-dark mb-0" id="skip_to_content">Skip to Content</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ribbon -->
-    <div class="p-1 ribbon text-center container-fluid">
-        <p class="d-inline mx-2">15% OFF <span class="d-md-none d-inline">- </span><span
-                class="d-none d-md-inline">EVERYTHING</span></p>
-        <p class="d-none d-md-inline ">until end of the month.</p>
-        <p class="d-inline text-sea-green">Use code: 15FF51</p>
+    <div class="p-2 ribbon text-center container-fluid">
+        <p class="d-inline">15<i class="ms-1 fa-solid fa-percent"></i> OFF <span class="d-md-none d-inline">-
+            </span><span class="d-none d-md-inline">EVERYTHING</span></p>
+        <p class="d-none d-md-inline mx-2">until end of the month.</p>
+        <p class="d-inline use_code">Use code: 15FF51</p>
     </div>
 
 
@@ -107,10 +117,14 @@
 
 
     <!-- banner -->
-    <div class="container pt-2">
+    <div class="container pt-0 pt-md-2">
         <section class="banner">
             <img src="images/banner-image.jpg" class="d-none d-md-block" alt="banner" />
-            <img src="images/banner-sm.jpg" class="d-block d-md-none" alt="banner" />
+            <img src="images/banner-sm.png" class="d-block d-md-none" alt="banner" />
+            <div class="py-4 banner_sm d-block d-md-none">
+                <h2 class="text-center mb-0 dull_sea_green">Wedding Invitations</h2>
+                <p class="text-center dull_sea_green mb-0">With free envelopes</p>
+            </div>
         </section>
     </div>
 
@@ -118,13 +132,13 @@
 
     <!-- filters menu -->
     <div class="container">
-        <section class="filter_menu_cover my-2">
-            <ul class="d-none d-md-flex align-items-center justify-content-center mb-0">
+        <section class="d-none d-md-block filter_menu_cover my-2">
+            <ul class="d-flex align-items-center justify-content-center mb-0">
                 <li class="p-3">
                     <button type="button" class="d-flex flex-row flex-nowrap">
                         <p class="mb-0">SIZE</p>
                         <div class="ms-1 icon_box">
-                            <i class="fa fa-angle-down icon" aria-hidden="true"></i>
+                            <span class="fw-bold">-</span>
                         </div>
                     </button>
                     <div class="dropdown">
@@ -139,7 +153,7 @@
                     <button type="button" class="d-flex flex-row flex-nowrap">
                         <p class="mb-0">COLOR</p>
                         <div class="ms-1 icon_box">
-                            <i class="fa fa-angle-down icon" aria-hidden="true"></i>
+                            <span class="fw-bold">-</span>
                         </div>
                     </button>
                     <div class="dropdown p-3" style="max-height: 300px;">
@@ -313,7 +327,7 @@
                     <button type="button" class="d-flex flex-row flex-nowrap">
                         <p class="mb-0">OEIENTATION</p>
                         <div class="ms-1 icon_box">
-                            <i class="fa fa-angle-down icon" aria-hidden="true"></i>
+                            <span class="fw-bold">-</span>
                         </div>
                     </button>
                     <div class="dropdown">
@@ -328,7 +342,7 @@
                     <button type="button" class="d-flex flex-row flex-nowrap">
                         <p class="mb-0">PHOTOS</p>
                         <div class="ms-1 icon_box">
-                            <i class="fa fa-angle-down icon" aria-hidden="true"></i>
+                            <span class="fw-bold">-</span>
                         </div>
                     </button>
                     <div class="dropdown">
@@ -343,7 +357,7 @@
                     <button type="button" class="d-flex flex-row flex-nowrap">
                         <p class="mb-0">THEMES</p>
                         <div class="ms-1 icon_box">
-                            <i class="fa fa-angle-down icon" aria-hidden="true"></i>
+                            <span class="fw-bold">-</span>
                         </div>
                     </button>
                     <div class="dropdown">
@@ -360,8 +374,8 @@
 
 
 
-
-    <section class="toolbar">
+    <!-- toolbar -->
+    <section class="d-none d-md-block toolbar">
         <div class="d-flex align-items-center container">
             <p class="mb-0 me-2">VIEWING ITEMS: 1 to 256 of 1054</p>
             <select name="" id="" style="border: none;">
@@ -371,786 +385,156 @@
         </div>
     </section>
 
-    <main class="main my-4">
-        <div class="container">
-            <div class="row row-cols-md-5 row-cols-2 row-cols-sm-3">
-                <div class="col">
+
+    <!-- main -->
+    <main class="main py-3 py-md-0 py-md-0 my-0 my-md-4">
+        <div class="container py-0 px-0">
+            <div class="row d-flex d-md-none">
+                <div class="col-12">
+                    <select id="filter_sm">
+                        <option>Themes</option>
+                        <option>Themes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-3 mt-md-0 px-2 mt-md-0 row row-cols-lg-5 row-cols-md-3 row-cols-2">
+                <div class="col px-1 px-md-2 pb-2 pb-md-4">
                     <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
+                        <div class="card_detail_section">
+                            <div class="cart_image_cover">
+                                <img src="images/card_image.jpg" alt="" />
+                            </div>
+                            <div
+                                class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
+                                <a href="/" class="mt-2">Modern Arch</a>
+                                <span class="product-sub-name">Wedding Invitations</span>
+                            </div>
                         </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
+                        <div class="card_btn d-flex flex-row flex-nowrap mt-3">
+                            <div class="icon_box d-flex align-items-center justify-content-center">
+                                <div class="icon_both"
+                                    style="position: relative; width: 42px; height: 30px; z-index: 100;">
                                     <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; left: 10px; z-index: -100; top: 50%;
+                                        transform: translateY(-50%);" />
                                 </div>
-                                <p>180+ colors & foil</p>
                             </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
+                            <div class="ps-2 btn_text">
+                                <p class="mb-0" style="font-size: 15px;">Customize Now</p>
+                                <p class="mb-0" style="font-size: 11px;">As low as: <span class="price">$0.99</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col px-1 px-md-2 pb-2 pb-md-4">
                     <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                        <div class="card_detail_section">
+                            <div class="cart_image_cover">
+                                <img src="images/card_image.jpg" alt="" />
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                            <div
+                                class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
+                                <a href="/" class="mt-2">Modern Arch</a>
+                                <span class="product-sub-name">Wedding Invitations</span>
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
+                        <div class="card_btn d-flex flex-row flex-nowrap mt-3">
+                            <div class="icon_box d-flex align-items-center justify-content-center">
+                                <div class="icon_both"
+                                    style="position: relative; width: 42px; height: 30px; z-index: 100;">
                                     <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; left: 10px; z-index: -100; top: 50%;
+                                        transform: translateY(-50%);" />
                                 </div>
-                                <p>180+ colors & foil</p>
                             </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
+                            <div class="ps-2 btn_text">
+                                <p class="mb-0" style="font-size: 15px;">Customize Now</p>
+                                <p class="mb-0" style="font-size: 11px;">As low as: <span class="price">$0.99</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col px-1 px-md-2 pb-2 pb-md-4">
                     <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                        <div class="card_detail_section">
+                            <div class="cart_image_cover">
+                                <img src="images/card_image.jpg" alt="" />
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                            <div
+                                class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
+                                <a href="/" class="mt-2">Modern Arch</a>
+                                <span class="product-sub-name">Wedding Invitations</span>
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
+                        <div class="card_btn d-flex flex-row flex-nowrap mt-3">
+                            <div class="icon_box d-flex align-items-center justify-content-center">
+                                <div class="icon_both"
+                                    style="position: relative; width: 42px; height: 30px; z-index: 100;">
                                     <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; left: 10px; z-index: -100; top: 50%;
+                                        transform: translateY(-50%);" />
                                 </div>
-                                <p>180+ colors & foil</p>
                             </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
+                            <div class="ps-2 btn_text">
+                                <p class="mb-0" style="font-size: 15px;">Customize Now</p>
+                                <p class="mb-0" style="font-size: 11px;">As low as: <span class="price">$0.99</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col px-1 px-md-2 pb-2 pb-md-4">
                     <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                        <div class="card_detail_section">
+                            <div class="cart_image_cover">
+                                <img src="images/card_image.jpg" alt="" />
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                            <div
+                                class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
+                                <a href="/" class="mt-2">Modern Arch</a>
+                                <span class="product-sub-name">Wedding Invitations</span>
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
+                        <div class="card_btn d-flex flex-row flex-nowrap mt-3">
+                            <div class="icon_box d-flex align-items-center justify-content-center">
+                                <div class="icon_both"
+                                    style="position: relative; width: 42px; height: 30px; z-index: 100;">
                                     <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; left: 10px; z-index: -100; top: 50%;
+                                        transform: translateY(-50%);" />
                                 </div>
-                                <p>180+ colors & foil</p>
                             </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
+                            <div class="ps-2 btn_text">
+                                <p class="mb-0" style="font-size: 15px;">Customize Now</p>
+                                <p class="mb-0" style="font-size: 11px;">As low as: <span class="price">$0.99</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col px-1 px-md-2 pb-2 pb-md-4 d-none d-md-flex">
                     <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                        <div class="card_detail_section">
+                            <div class="cart_image_cover">
+                                <img src="images/card_image.jpg" alt="" />
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                            <div
+                                class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
+                                <a href="/" class="mt-2">Modern Arch</a>
+                                <span class="product-sub-name">Wedding Invitations</span>
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
+                        <div class="card_btn d-flex flex-row flex-nowrap mt-3">
+                            <div class="icon_box d-flex align-items-center justify-content-center">
+                                <div class="icon_both"
+                                    style="position: relative; width: 42px; height: 30px; z-index: 100;">
                                     <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; left: 10px; z-index: -100; top: 50%;
+                                        transform: translateY(-50%);" />
                                 </div>
-                                <p>180+ colors & foil</p>
                             </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
+                            <div class="ps-2 btn_text">
+                                <p class="mb-0" style="font-size: 15px;">Customize Now</p>
+                                <p class="mb-0" style="font-size: 11px;">As low as: <span class="price">$0.99</span></p>
                             </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                    <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                                </div>
-                                <p>180+ colors & foil</p>
-                            </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                    <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                                </div>
-                                <p>180+ colors & foil</p>
-                            </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                    <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                                </div>
-                                <p>180+ colors & foil</p>
-                            </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                    <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                                </div>
-                                <p>180+ colors & foil</p>
-                            </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                    <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                                </div>
-                                <p>180+ colors & foil</p>
-                            </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                    <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                                </div>
-                                <p>180+ colors & foil</p>
-                            </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="d-flex flex-row flex-nowrap">
-                                <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                    <img src="images/color-feature-dot.jpg" alt="" />
-                                    <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                                </div>
-                                <p>180+ colors & foil</p>
-                            </div>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card_card_cover d-flex flex-wrap align-items-center justify-content-center flex-column">
-                        <div class="cart_image_cover">
-                            <img src="images/card_image.jpg" alt="" />
-                        </div>
-                        <div class="cart_text d-flex flex-wrap align-items-center justify-content-center flex-column">
-                            <a href="/" class="mt-2">Modern Arch</a>
-                            <span class="product-sub-name">Wedding Invitations</span>
-                        </div>
-                        <div class="card_tools mt-3 d-flex flex-row py-3">
-                            <div class="icon_both" style="position: relative; width: 40px; height: 30px;">
-                                <img src="images/color-feature-dot.jpg" alt="" />
-                                <img src="images/color-filter-1.jpg" alt="" style="position: absolute; top: -10%; right: 10px; z-index: -100;" />
-                            </div>
-                            <p>180+ colors & foil</p>
-                            <a href="/" class="ms-3 icon_cover">
-                                <i class="fa-regular fa-heart icon"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -1160,13 +544,477 @@
     </main>
 
 
+    <!-- wedding-invitaions -->
+    <div class="container">
+        <div class="wedding_invitaions">
+            <div class="section_header">
+                <h2 class="text-center text-white">Wedding Invitations</h2>
+            </div>
+            <div class="section_sub_header">
+                <p class="pb-1 text-center text-dark">What Our Customers Have to Say About Our Wedding Invitations</p>
+            </div>
+
+
+
+
+            <div class="reviews_section pt-4 px-0 p-md-3">
+                <div class="mb-3 mb-md-0 review p-3 px-md-0">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <p class="mb-0 review_title">
+                            Very helpful
+                        </p>
+                        <p class="ms-4 mb-0 review_writer">Review by <span class="reviewed_by">Jessica</span></p>
+                    </div>
+                    <div class="stars my-2">
+                        <div class="icons d-flex align-items-center justify-content-start">
+                            <i class="fa-solid fa-star icon"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                        </div>
+                    </div>
+                    <p class=" mb-0 review_text">
+                        This was great!
+                    </p>
+                </div>
+                <div class="mb-3 mb-md-0 review p-3 px-md-0">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <p class="mb-0 review_title">
+                            Excellent Product!
+                        </p>
+                        <p class="ms-4 mb-0 review_writer">Review by <span class="reviewed_by">Debbie</span></p>
+                    </div>
+                    <div class="stars my-2">
+                        <div class="icons d-flex align-items-center justify-content-start">
+                            <i class="fa-solid fa-star icon"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                        </div>
+                    </div>
+                    <p class=" mb-0 review_text">
+                        We ordered this “Save the Date” holiday party card and it was exactly what we were hoping for in
+                        an invite. A few of our guest responses even shared how adorable the invite was for our upcoming
+                        holiday party! We will
+                        definitely use this company again in the future!
+                    </p>
+                </div>
+                <div class="mb-3 mb-md-0 review p-3 px-md-0">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <p class="mb-0 review_title">
+                            Great quality!!
+                        </p>
+                        <p class="ms-4 mb-0 review_writer">Review by <span class="reviewed_by">Niki</span></p>
+                    </div>
+                    <div class="stars my-2">
+                        <div class="icons d-flex align-items-center justify-content-start">
+                            <i class="fa-solid fa-star icon"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                        </div>
+                    </div>
+                    <p class=" mb-0 review_text">
+                        Beautiful color and great quality. I was very impressed with the weight and feel of the paper.
+                        It’s almost soft and flexible, doesn’t look like it will get messed up in the mail at all.
+                        Beautifully crafted, came out just how I
+                        wanted them and the box said they put a few extra cards and envelopes in, thought that was a
+                        nice touch. Arrived in a timely manner.
+                    </p>
+                </div>
+                <div class="mb-3 mb-md-0 review p-3 px-md-0">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <p class="mb-0 review_title">
+                            Wonderful
+                        </p>
+                        <p class="ms-4 mb-0 review_writer">Review by <span class="reviewed_by">Amy</span></p>
+                    </div>
+                    <div class="stars my-2">
+                        <div class="icons d-flex align-items-center justify-content-start">
+                            <i class="fa-solid fa-star icon"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                            <i class="fa-solid fa-star icon d-md-none"></i>
+                        </div>
+                    </div>
+                    <p class=" mb-0 review_text">
+                        Invitations look better than I thought- so happy we went with Basic Invite!
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="d-none d-md-block p-3 unique_doc">
+                <h5 class="mb-0 fw-bold heading">
+                    Wedding Invitations As Unique As You Are
+                </h5>
+                <p class="my-3">At Basic Invite, two essential beliefs form the foundation of our business model: that
+                    you should have complete creative control over your design process, and that the purpose of a
+                    wedding invitation is to tell your love
+                    story at a glance. While it may be impossible to fit every heartfelt gift, carefully-planned date,
+                    and declaration of love into one of our 5” x 7” designs (or even one of our larger Seal-and-Send
+                    wedding invitations), our
+                    extensive customization options can capture the essence of who you are as a couple. Once you’ve
+                    created the perfect invitation to tell your story so far, you can start writing the next chapter
+                    together- the one that begins
+                    with “I do.”</p>
+                <h5 class="mb-0 mt-3 fw-bold heading">
+                    What Sets Basic Invite Apart?
+                </h5>
+                <h6 class="mt-2 fw-bold subheading">Over 1,200 Design Templates</h6>
+                <p class="ms-3 mb-0">With an extensive catalog of professionally-designed templates at your fingertips,
+                    you can be sure you’ll find a beautiful beginning to your creation process. Our designers recognize
+                    that your idea of a perfect wedding is
+                    unique to you, so they’ve prepared layouts to suit nearly any theme: from ultra-modern to vintage,
+                    from chic to rustic, you can find it here.</p>
+                <h6 class="mt-2 fw-bold subheading">A System Made For You</h6>
+                <p class="ms-3 mb-0">While our templates provide a lovely beginning, they’re missing one thing to truly
+                    set them apart: your personal touch. Each design is fully customizable, with more than 160 color
+                    options, over 100 distinctive fonts, and
+                    editable text and photos to help you transform your chosen template into the invitation of your
+                    dreams. Our revolutionary system allows you to preview each of those changes in real-time, taking
+                    the hassle out of the
+                    process and allowing you to devote your time where it’s truly needed.</p>
+                <h6 class="mt-2 fw-bold subheading">Customer Support That Cares</h6>
+                <p class="ms-3 mb-0">From the moment that you enter basicinvite.com, our full staff of stationery
+                    specialists is prepared to help. Whether you need a second opinion on color choices, assistance in
+                    finding a particular product, or just don’t
+                    know where to begin, we’re available by phone or instant chat when you need us. And for the rare
+                    times that something doesn’t go according to plan, we offer a Love It Guarantee: if you don’t love
+                    your final product,
+                    we’ll either replace it entirely free of charge or you may return it for a full refund, no questions
+                    asked.</p>
+
+            </div>
+
+            <div class="my-5 d-block d-md-none  section_header py-3">
+                <h2 class="text-center text-white">FAQ's About <br /> Wedding Invitations</h2>
+            </div>
+
+
+            <div class="d-none d-md-block faq_section pt-4 p-3">
+                <h5 class="fw-bold heading">FAQ's About Wedding Invitations</h5>
+                <div class="question mt-5">
+                    <h6 class="fw-bold mt-3 subheading">What Is The Average Cost Of 100 Wedding Invitations?</h6>
+                    <div class="q1_a">
+                        <p class="mb-2">The cost of 100 wedding invitations can vary greatly depending on a variety of
+                            factors, such as the design, quality of materials, printing method, and additional features
+                            like
+                            inserts, envelopes, and RSVP cards.</p>
+                        <p class="mb-2">However on average, couples will spend $160 for 100 wedding invitations.
+                            However,
+                            it's important to keep in mind that this is just an estimate and the actual cost can be
+                            higher
+                            or lower depending on the factors
+                            mentioned above.</p>
+                        <p class="mb-2">To get a more accurate estimate, add the card you would like to cart to find the
+                            best option that fits within your budget.</p>
+                    </div>
+                </div>
+                <div class="question mt-5">
+                    <h6 class="fw-bold mt-3 subheading">How Early Should You Send Out Your Wedding Invitations?</h6>
+                    <div class="q1_a">
+                        <p class="mb-2">It's generally recommended to send out wedding invitations six to eight weeks
+                            before the wedding date. This gives your guests enough time to make travel arrangements,
+                            RSVP, and plan their schedules accordingly.</p>
+                        <p class="mb-2">If you're planning a destination wedding or have guests who will need to make
+                            extensive travel arrangements, it's a good idea to send out your invitations eight to twelve
+                            weeks in advance to give them ample time to plan
+                            and prepare.</p>
+                        <p class="mb-2">On the other hand, if you're planning a local wedding and most of your guests
+                            are local, you can send out your invitations closer to the six-week mark.</p>
+                        <p class="mb-2">Regardless of when you send out your invitations, it's a good idea to give your
+                            guests a "save the date" notice several months in advance to ensure they have your wedding
+                            date blocked out on their calendar. This is
+                            especially important if you're planning a wedding during a busy time of year or if many of
+                            your guests will need to travel to attend.</p>
+                    </div>
+                </div>
+                <div class="question mt-5">
+                    <h6 class="fw-bold mt-3 subheading">How Many Wedding Invitations Should I Order?</h6>
+                    <div class="q1_a">
+                        <p class="mb-2">When it comes to ordering wedding invitations, it's important to consider
+                            several factors to determine the right quantity to order. Here are a few things to keep in
+                            mind:</p>
+                        <div class="ps-3">
+                            <p class="mb-2">Guest list size: The number of invitations you need will depend on the
+                                number of
+                                guests you plan to invite. Make sure to include a few extra invitations for last-minute
+                                additions or for keepsakes.</p>
+                            <p class="mb-2">Couples or families: Consider how many invitations will be sent to couples
+                                or
+                                families versus individual guests. Typically, one invitation is sent per household or
+                                couple, while individual guests receive their own
+                                invitations.</p>
+                            <p class="mb-2">Extras: Consider ordering a few extra invitations in case of errors during
+                                addressing, or if you decide to invite additional guests later on.</p>
+                        </div>
+                        <p class="mb-2">As a general rule of thumb, it's recommended to order 10-15% more invitations
+                            than the number of guests on your list. This will help ensure you have enough invitations to
+                            cover any unexpected changes and to keep
+                            some as a keepsake.</p>
+                    </div>
+                </div>
+                <div class="question mt-5">
+                    <h6 class="fw-bold mt-3 subheading">Is A RSVP Card Necessary With A Wedding Invitation?</h6>
+                    <div class="q1_a">
+                        <p class="mb-2">While a RSVP card is not absolutely necessary with a wedding invitation, it is
+                            highly recommended as it helps you to plan for the number of guests who will attend your
+                            wedding. Here are a few reasons why:</p>
+                        <div class="ps-3">
+                            <p class="mb-2">Convenience: Including a RSVP card makes it easy for guests to respond to
+                                your invitation as they don't have to worry about finding a piece of paper to write on
+                                or searching for an envelope to mail their response
+                                back to you.</p>
+                            <p class="mb-2">Planning: Knowing the number of guests who will attend your wedding is
+                                crucial for planning seating arrangements, catering, and other logistics.</p>
+                            <p class="mb-2">Politeness: Including a RSVP card is considered polite as it shows that you
+                                value your guests' responses and appreciate their effort in letting you know whether or
+                                not they will attend.</p>
+                        </div>
+                        <p class="mb-2">Overall, including a RSVP card with your wedding invitation is a thoughtful and
+                            practical way to ensure that you have an accurate headcount for your wedding day.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="d-md-none faq_sm">
+                <div class="accordion" id="questionsAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#questionOne" aria-expanded="true" aria-controls="questionOne">
+                                What Is The Average Cost Of 100 Wedding Invitations?
+                            </button>
+                        </h2>
+                        <div id="questionOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-2">The cost of 100 wedding invitations can vary greatly depending on a
+                                    variety of
+                                    factors, such as the design, quality of materials, printing method, and additional
+                                    features
+                                    like
+                                    inserts, envelopes, and RSVP cards.</p>
+                                <p class="mb-2">However on average, couples will spend $160 for 100 wedding invitations.
+                                    However,
+                                    it's important to keep in mind that this is just an estimate and the actual cost can
+                                    be
+                                    higher
+                                    or lower depending on the factors
+                                    mentioned above.</p>
+                                <p class="mb-2">To get a more accurate estimate, add the card you would like to cart to
+                                    find the
+                                    best option that fits within your budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                                How Early Should You Send Out Your Wedding Invitations?
+                            </button>
+                        </h2>
+                        <div id="questionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-2">It's generally recommended to send out wedding invitations six to eight
+                                    weeks
+                                    before the wedding date. This gives your guests enough time to make travel
+                                    arrangements,
+                                    RSVP, and plan their schedules accordingly.</p>
+                                <p class="mb-2">If you're planning a destination wedding or have guests who will need to
+                                    make
+                                    extensive travel arrangements, it's a good idea to send out your invitations eight
+                                    to twelve
+                                    weeks in advance to give them ample time to plan
+                                    and prepare.</p>
+                                <p class="mb-2">On the other hand, if you're planning a local wedding and most of your
+                                    guests
+                                    are local, you can send out your invitations closer to the six-week mark.</p>
+                                <p class="mb-2">Regardless of when you send out your invitations, it's a good idea to
+                                    give your
+                                    guests a "save the date" notice several months in advance to ensure they have your
+                                    wedding
+                                    date blocked out on their calendar. This is
+                                    especially important if you're planning a wedding during a busy time of year or if
+                                    many of
+                                    your guests will need to travel to attend.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+                                How Many Wedding Invitations Should I Order?
+                            </button>
+                        </h2>
+                        <div id="questionThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#questionsAccordion">
+                            <div class="accordion-body">
+                                <p class="mb-2">When it comes to ordering wedding invitations, it's important to
+                                    consider
+                                    several factors to determine the right quantity to order. Here are a few things to
+                                    keep in
+                                    mind:</p>
+                                <div class="ps-3">
+                                    <p class="mb-2">Guest list size: The number of invitations you need will depend on
+                                        the
+                                        number of
+                                        guests you plan to invite. Make sure to include a few extra invitations for
+                                        last-minute
+                                        additions or for keepsakes.</p>
+                                    <p class="mb-2">Couples or families: Consider how many invitations will be sent to
+                                        couples
+                                        or
+                                        families versus individual guests. Typically, one invitation is sent per
+                                        household or
+                                        couple, while individual guests receive their own
+                                        invitations.</p>
+                                    <p class="mb-2">Extras: Consider ordering a few extra invitations in case of errors
+                                        during
+                                        addressing, or if you decide to invite additional guests later on.</p>
+                                </div>
+                                <p class="mb-2">As a general rule of thumb, it's recommended to order 10-15% more
+                                    invitations
+                                    than the number of guests on your list. This will help ensure you have enough
+                                    invitations to
+                                    cover any unexpected changes and to keep
+                                    some as a keepsake.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- related searches -->
+    <div class="container">
+        <div class="pt-5 related_searches">
+            <h4 class="text-start text-md-center mb-0">Related Searches</h4>
+            <ul
+                class="related_links d-flex flex-wrap align-items-center justify-content-start justify-content-md-center">
+                <li><a href="/">wedding invitation sets</a></li>
+                <li><a href="/">save the date cards</a></li>
+                <li><a href="/">invitation</a></li>
+                <li><a href="/">wedding announcements</a></li>
+                <li><a href="/">foil wedding invitations</a></li>
+            </ul>
+        </div>
+        <div class="pb-5 related_searches">
+            <h4 class="text-start text-md-center mb-0">Additional Themes</h4>
+            <ul
+                class="related_links d-flex flex-wrap align-items-center justify-content-start justify-content-md-center">
+                <li><a href="/">Wedding Invitations With RSVP Cards</a></li>
+                <li><a href="/">Barn</a></li>
+                <li><a href="/">Romantic</a></li>
+                <li><a href="/">Rose</a></li>
+                <li><a href="/">Show More</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h5 class="footer_heading">Quick Links</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled mt-3">
+                                <li><a href="#">Order Assistance</a></li>
+                                <li><a href="#">Your Saved Products</a></li>
+                                <li><a href="#">Order a Custom Sample</a></li>
+                                <li><a href="#">Peel & Seal Envelopes</a></li>
+                                <li><a href="#">Advanced Search</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                                <li><a href="#">Free Printables</a></li>
+                                <li><a href="#">Shop by Theme</a></li>
+                                <li><a href="#">Wedding Etiquette</a></li>
+                                <li><a href="#">Employment</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Accessibility Statement</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled mt-3">
+                                <li><a href="#">Your Proofs</a></li>
+                                <li><a href="#">Paper Quality</a></li>
+                                <li><a href="#">Free Address Collection</a></li>
+                                <li><a href="#">Our Love It Guarantee</a></li>
+                                <li><a href="#">Shipping Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Inspiration Gallery</a></li>
+                                <li><a href="#">Basic Invite Blog</a></li>
+                                <li><a href="#">Wording Examples</a></li>
+                                <li><a href="#">Partner Program</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-md-0 py-5 col-lg-5 col-md-6 col-12">
+                    <h5 class="footer_heading">Sign up for discounts</h5>
+                    <p class="my-3">Join our mailing list to get notified of sales and discounts</p>
+                    <input type="search" id="search" name="search" style="width: 100%; border: none;"
+                        class="py-2 p-3 input_field" value="" placeholder="search store" />
+                    <button type="button" style="margin-top: 20px; border: none; background-color: transparent;">SIGN
+                        UP</button>
+                </div>
+                <div class="col-lg-3 col-md-12 mt-4 mt-lg-0 col-12">
+                    <h5 class="footer_heading">Contact Us</h5>
+                    <p class="my-3">Looking for help with an existing order?
+                        click here for order assistance</p>
+                    <ul class="mb-0">
+                        <li><a href="/">Chat with us live</a></li>
+                        <li><a href="/">Email us</a></li>
+                        <li><a href="/">1.800.705.1243</a></li>
+                        <li><a href="/">Monday to Friday, 9 AM to 5 PM MST, <br />
+                                Closed all major holidays.</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-start">
+                    <img src="images/visa-cards.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
         integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
